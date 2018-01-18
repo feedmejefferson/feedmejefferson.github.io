@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $.getJSON("mock-choice.json", function(choice) {
+  $.getJSON("hunger.json", function(choice) {
     $.choice=choice;
     $("#img-a").attr("src","images/" + choice.a); 
     $("#img-b").attr("src","images/" + choice.b); 
