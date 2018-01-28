@@ -6,7 +6,7 @@ $(document).ready(function(){
     xhrFields: {
       withCredentials: false
     },
-    url: "http://feedmejefferson.com:9000/hunger.json" + location.search,
+    url: "http://hunger.feedmejefferson.com:9000/hunger.json" + location.search,
     crossDomain: true,
     success: function(choice) {
       $.choice=choice;
