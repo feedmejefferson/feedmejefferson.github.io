@@ -1,13 +1,13 @@
 $(document).ready(function(){
   $.ajax({
-//    type: 'GET',
-    dataType: "jsonp",
-//    contentType: 'text/plain',
-//    xhrFields: {
-//      withCredentials: false
-//    },
+    type: 'GET',
+    dataType: "json",
+    contentType: 'text/plain',
+    xhrFields: {
+      withCredentials: false
+    },
     url: "http://feedmejefferson.com:9000/hunger.json" + location.search,
-//    crossDomain: true,
+    crossDomain: true,
     success: function(choice) {
       $.choice=choice;
       $("#img-a").attr("src","images/" + choice.a); 
