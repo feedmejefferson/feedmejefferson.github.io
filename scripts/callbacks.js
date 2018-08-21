@@ -6,8 +6,8 @@ $(document).ready(function(){
     xhrFields: {
       withCredentials: false
     },
-    url: "hunger.json" + location.search,
-    crossDomain: false,
+    url: "http://hunger.feedmejefferson.com:9000/hunger.json" + location.search,
+    crossDomain: true,
     success: function(choice) {
       var hour = new Date().getHours();
       $("#img-a").attr("src","images/" + choice.a); 
