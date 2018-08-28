@@ -184,3 +184,23 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .highlight .vg { color: #008080; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
+
+
+.food-canvas {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.food-canvas a { 
+  width: calc(50vmax - 40px);
+  height: calc(50vmax - 40px);
+}
+
+.food-canvas img {
+  height: 90%;
+  width: 90%;
+  object-fit: contain;
+  object-position: middle;
+  padding: 5%;
+}
