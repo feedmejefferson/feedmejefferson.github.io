@@ -16,6 +16,20 @@ $(document).ready(function(){
       $("#prefer-a").attr("href","index.html?searchSession=" + choice.searchSession + "&chosen=" + choice.a + "&notChosen=" + choice.b + "&hour=" + hour); 
       $("#want-b").attr("href","success.html?searchSession=" + choice.searchSession + "&chosen=" + choice.b + "&notChosen=" + choice.a + "&hour=" + hour); 
       $("#prefer-b").attr("href","index.html?searchSession=" + choice.searchSession + "&chosen=" + choice.b + "&notChosen=" + choice.a + "&hour=" + hour); 
+      $.ajax({
+        dataType: "text",
+        url: "images/attributions/" + choice.a + ".txt",
+        success: function(data) {
+          $("#attribution-a").html(data); 
+        }
+      });
+      $.ajax({
+        dataType: "text",
+        url: "images/attributions/" + choice.b + ".txt",
+        success: function(data) {
+          $("#attribution-b").html(data); 
+        }
+      });
     }
   });
 });

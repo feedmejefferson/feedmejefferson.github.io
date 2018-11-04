@@ -227,3 +227,12 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
   padding: 5%;
 }
 
+.attribution {
+  font-size: 80%;
+  background-color: #e0e0e0ff;
+  margin: 20px;
+  padding: 10px;
+}
+.attribution p {
+  margin-bottom:0;
+ }
