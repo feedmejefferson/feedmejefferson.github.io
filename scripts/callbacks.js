@@ -6,7 +6,8 @@ $(document).ready(function(){
     xhrFields: {
       withCredentials: false
     },
-    url: "http://hunger.feedmejefferson.com:9000/hunger.json" + location.search,
+ // url: "http://localhost:5000/hunger-2a124/us-central1/hunger" + location.search,
+    url: "https://us-central1-hunger-2a124.cloudfunctions.net/hunger" + location.search,
     crossDomain: true,
     success: function(choice) {
       var hour = new Date().getHours();
